@@ -1,0 +1,126 @@
+/*
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+/*Regras generales*/
+main{
+    margin-bottom: 100px;
+}
+h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    padding-left: 2rem;
+}
+p{
+    display: block;
+}
+.contenedorPrincipal{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.principal{
+    margin-top: 20vh;
+    width: 50vh;
+    border-radius: 10px 10px 90px 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.icono{
+    background-color: black;
+    color:rgba(0, 0, 0, 0.1);
+    fill:black;
+    border-radius: 25px;
+}
+/*Fin de reglas generales*/
+.parteSuperior{
+    margin-bottom: 25px;
+}
+.caja{
+    display: flex;
+    flex-direction: column;
+}
+.small{
+    color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9px;
+}
+
+.division{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icono{
+    width: 50px;
+    height: 50px;
+    background-color: hsl(259, 100%, 65%);
+    color:rgba(0, 0, 0, 0.1);
+    fill:black;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.icono:hover{
+    background-color: black;
+}
+.dividiendo{
+    height: 1px;
+    background-color: rgb(128, 126, 126);
+    width: 70%;
+}
+.contenedorCajas{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:end;
+}
+.entrada{
+    height: 5vh;
+    width: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    border: 1px;
+    border-color: rgb(128, 126, 126);
+    border-style: solid;
+    border-radius: 5px;
+}
+.entradaInvalida{
+    height: 5vh;
+    width: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.tituloCaja{
+    display: block;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    color: rgb(128, 126, 126);
+}
+.tituloCajaInvalida{
+    display: block;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    color: red;
+}
+.resultado{
+    color: hsl(259, 100%, 65%);
+    padding-right: 1rem;
+}
+.botton{
+    margin-bottom: 1.5rem;
+}

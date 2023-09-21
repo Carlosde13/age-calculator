@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Nunito:wght@400;700&family=Open+Sans:wght@300;400;700&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="contenedorPrincipal">
+    <div class="principal">
+      <form class="formulario" id="formulario">
+      <div class="parteSuperior">
+        <div class="contenedorCajas">
+
+          <div class="caja" id="cajaDia">
+            <label class="tituloCaja" for="dia" id="tituloDia">DAY</label>
+            <input class="entrada" id="dia" placeholder="DD" type="number">
+            <small id="alertaInvalidDay" class="small"></small>
+          </div>
+
+          <div class="caja">
+            <label class="tituloCaja" for="mes" id="tituloMes">MONTH</label>
+            <input class="entrada" id="mes" placeholder="MM" type="number">
+            <small id="alertaInvalidMonth" class="small"></small>
+          </div>
+
+          <div class="caja">
+            <label class="tituloCaja" for="anio" id="tituloAnio">YEAR</label>
+            <input class="entrada" id="anio" placeholder="YYYY" type="number">
+            <small id="alertaInvalidYear" class="small"></small>
+          </div>
+
+        </div>
+      </div>
+    </form>
+      <div class="division">
+        <div class="dividiendo"> </div>
+        <img src="./assets/images/icon-arrow.svg" class="icono" class="calcularBtn" id="calcularBtn">
+      </div>
+      <div class="resultados">
+        <h2><b class="resultado" id="resultadoAnios">--</b>years</h2>
+        <h2><b class="resultado" id="resultadoMeses">--</b>months</h2>
+        <h2 class="botton"><b class="resultado" id="resultadoDias">--</b>days</h2>
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Carlos de Leon</a>.
+  </div>
+  <script src="./main.js" defer></script>
+</body>
+</html>
